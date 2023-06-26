@@ -49,5 +49,13 @@ namespace TestCaseNUnitTests
         {
             return _sut.Divide(a, b);
         }
+
+        [TestCase(18, 7, ExpectedResult = 4)]
+        [TestCase(10, 2, ExpectedResult = 0)]
+        [TestCase(3, 2, ExpectedResult = 1)]
+        public int Modulo_Test(int a, int b)
+        {
+            return _sut.Modulo(a, b);
+        }
     }
 }
